@@ -43,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
             channel1.setDescription("This is for default notification");
             notificationManager.createNotificationChannel(channel1);
 
+            NotificationChannel channel2 = new
+                    NotificationChannel("marketing", "Marketing Channel",
+                    NotificationManager.IMPORTANCE_DEFAULT);
+
+            channel2.setDescription("This is for marketing notification");
+            notificationManager.createNotificationChannel(channel2);
+
         }
 
         Intent intent = new Intent(MainActivity.this, MainActivity.class);
